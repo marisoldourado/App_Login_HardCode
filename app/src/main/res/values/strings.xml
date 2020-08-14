@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Login_HardCode</string>
+    <string name="lbl_enrollment">Usuário</string>
+    <string name="edit_hint">Números do prontuário</string>
+    <string name="lbl_password">Senha</string>
+    <string name="btn_login">Login</string>
+</resources>
