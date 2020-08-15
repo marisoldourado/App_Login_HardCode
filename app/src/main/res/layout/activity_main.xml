@@ -1,48 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.MainActivity"
-    android:orientation="vertical">
+    tools:context=".activities.MainActivity">
 
     <TextView
         android:id="@+id/txtview_enrollment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_enrollment"/>
+        android:text="@string/lbl_enrollment"
+        android:padding="10dp"/>
 
     <EditText
+        android:id="@+id/edittext_enrollment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:id="@+id/edittext_n1"
+        android:layout_below="@+id/txtview_enrollment"
         android:inputType="number"
-        android:hint="@string/edit_hint"/>
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:hint="@string/edit_hint"
+        android:padding="10dp"/>
 
     <TextView
         android:id="@+id/txtview_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lbl_password"/>
+        android:layout_below="@+id/edittext_enrollment"
+        android:text="@string/lbl_password"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:padding="10dp"/>
 
     <EditText
+        android:id="@+id/edittext_password"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/txtview_password"
         android:layout_margin="10dp"
-        android:id="@+id/edittext_n2"
-        android:inputType="textPassword"
-       />
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:inputType="numberPassword"
+        android:padding="10dp"/>
 
     <Button
-        android:layout_width="match_parent"
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/edittext_password"
         android:text="@string/btn_login"
-        android:id="@+id/buttonSomar"
-        android:textColor="@color/colorWhite"
-        android:background="@color/colorPrimary"
-        android:layout_gravity="center"
+        android:textColor="@color/colorBlack"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"/>
 
-</LinearLayout>
+</RelativeLayout>

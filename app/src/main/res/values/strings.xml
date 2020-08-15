@@ -4,4 +4,7 @@
     <string name="edit_hint">Números do prontuário</string>
     <string name="lbl_password">Senha</string>
     <string name="btn_login">Login</string>
+    <string name="welcome">Bem vindo</string>
+    <string name="login_error">Erro no login</string>
+    <string name="fields_validade">Os campos usuário e senha devem ser preenchidos!</string>
 </resources>
